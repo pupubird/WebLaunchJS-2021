@@ -361,6 +361,33 @@ if ((age >= 20 && age <= 30) || age != 25) {
 
 ## Loop <a name="loop"></a>
 
+Here is a problem to solve:
+
+Print your name 1000 times.
+
+We can't be possibly copy-pasting `console.log` 1000 times, in programming, when we want to do things iteratively, we use **loop**:
+
+```javascript
+let myName = "Rain";
+for (let index = 0; index < 1000; index++) {
+  console.log(myName + " printing at " + index);
+}
+```
+
+We are going to cover only **for loop** for now, but I will let you try to discover on **while loop**
+
+### For loop
+
+`for` is another keyword in JavaScript, as what we cover in `if-else`, the `{ }` here acting as the container that contains the code that will run in loops.
+
+for loop has a specific syntax as such:
+
+```javascript
+for (/*<declaring the index starting>*/ ,/*<a condition that if true, this loop will run again>*/, /*<what happen after this loop finished>*/ ){
+  //...
+}
+```
+
 <br>
 <br>
 
