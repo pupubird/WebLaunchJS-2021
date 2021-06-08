@@ -21,7 +21,7 @@ Estimated completion time: 1.5 - 2 hours
 
 ## JavaScript in browser <a name="intro"></a>
 
-> JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. It was inspired by Java, Scheme and Self. Netscape, for a time, made the best browser in the world and enjoyed market dominance.
+> JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. It was inspired by Java, Scheme, and Self. Netscape, for a time, made the best browser in the world and enjoyed market dominance.
 
 --- [A brief history of JavaScript by Ben Aston](https://medium.com/@_benaston/lesson-1a-the-history-of-javascript-8c1ce3bffb17#:~:text=JavaScript%20was%20created%20by%20Brendan,by%20Java%2C%20Scheme%20and%20Self.&text=Netscape%2C%20for%20a%20time%2C%20made,world%20and%20enjoyed%20market%20dominance.)
 
@@ -29,11 +29,11 @@ JavaScript wasn't a general-purpose programming language --- it is a scripting l
 
 What it means is essentially it was never meant to go out from the browser (thou this is no longer true with **node.js**), the only purpose was only for you to add a behavior layer on your browser, like getting data from the server periodically
 
-Using JavaScript, you are able to get your HTML element, and manipulate the styling, attributes of the element.
+Using JavaScript, you can get your HTML element, and manipulate the styling, attributes of the element.
 
-Although there are some alternative to manipulate your element with other languages (like Java Applet, etc), but the only officially marketed language is JavaScript.
+Although there is some alternative to manipulate your element with other languages (like Java Applet, etc), the only officially marketed language is JavaScript.
 
-Fun fact: JavaScript has nothing to do with Java, other than the name itself is similiar, nothing is 🤣.
+Fun fact: JavaScript has nothing to do with Java, other than the name itself is similar, nothing is 🤣.
 
 <br>
 <br>
@@ -62,7 +62,7 @@ Let's start by creating our `index.html` as such:
 </html>
 ```
 
-Open up your browser, look for inspection tool, right click on the browser, you should be seeing something like this:
+Open up your browser, look for the inspection tool, right-click on the browser, you should be seeing something like this:
 
 ![inspect](https://raw.githubusercontent.com/pupubird/WebLaunchJS-2021/master/assets/inspect.png)
 
@@ -72,7 +72,7 @@ Click on `Inspect`, there will be a new tab opening up as such:
 
 _It's totally fine if your layout is different_
 
-Inspect tool on the browser is one of the most used tool when it comes to front-end web development, you can't live without it.
+Inspect tool on the browser is one of the most used tools when it comes to front-end web development, you can't live without it.
 
 ### Console
 
@@ -82,11 +82,11 @@ Notice on your inspection tool, there is a section called `Console`, this is whe
 
 Look! There is already something showing up in the console!
 
-Console is where we will be printing out text etc, it's usually hidden from users as it's for debug and development purpose only. Don't worry if you do not understand the usage of it now, it will be clearer later.
+The console is where we will be printing out text etc, it's usually hidden from users as it's for debugging and development purposes only. Don't worry if you do not understand the usage of it now, it will be clearer later.
 
 ### Code
 
-Now we are seeing a message `World` being printten on the console, but why?
+Now we are seeing a message `World` being printed on the console, but why?
 
 Let's look at our `index.html`, where we have the `script` tag:
 
@@ -96,9 +96,9 @@ Let's look at our `index.html`, where we have the `script` tag:
 </script>
 ```
 
-- JavaScript code usually live in a HTML tag that we called `script` tag, just like your typical `h1`, `p` etc, it's a way of telling the browser this is contains JavaScript code
+- JavaScript code usually live in an HTML tag that we called `script` tag, just like your typical `h1`, `p` etc, it's a way of telling the browser this is contained JavaScript code
 
-What `console.log` essentially does is that, it tells the browser "Hey, can you help me to print this out in your **console** tab?". We are using JavaScript to access to our browser console tab to print out our first Hello World application!
+What `console.log` essentially does is that it tells the browser "Hey, can you help me to print this out in your **console** tab?". We are using JavaScript to access our browser console tab to print out our first Hello World application!
 
 Let's have some fun by changing some of the code:
 
@@ -133,18 +133,18 @@ We call the step by step of processing the data (for say, adding up 2 numbers) a
 
 -- by me 🤣
 
-Look around yourself, you are living in a world with full of data.
+Look around yourself, you are living in a world full of data.
 
-My laptop battery level is a data, my bottle's water level is also a data.
+My laptop battery level is data, my bottle's water level is also data.
 
-There are a lot of different type of data, be it a number (water level like litres, etc), a word (your name), etc.
+There are a lot of different types of data, be it a number (water level like liters, etc), a word (your name), etc.
 
 In JavaScript specifically, we have:
 
 1. **String** - a series of words like `"Rain Chai"`. It has to be wrapped in double or single quotes.
 2. **Number** - Integer or decimal number like `1`, `1.1`, `2.2`
-3. **Boolean** - it can only be `true` or `false` (literally, without double nor single quotes), useful for cases like `let isLoggedIn = true;`
-4. **Undefined** - `undefined`, it's a state for a variable, it stands for "this variable is not defined, does not have any data.", you can think of it like void, it's empty. You will only use this in a more advance case, don't worry if you don't understand it now.
+3. **Boolean** - it can only be `true or `false`(literally, without double nor single quotes), useful for cases like`let isLoggedIn = true;`
+4. **Undefined** - `undefined`, it's a state for a variable, it stands for "this variable is not defined, does not have any data.", you can think of it as void, it's empty. You will only use this in a more advanced case, don't worry if you don't understand it now.
 
 You may refer to [w3schools JavaScript data types documentation](https://www.w3schools.com/js/js_datatypes.asp) for more information.
 
@@ -152,12 +152,12 @@ You may refer to [w3schools JavaScript data types documentation](https://www.w3s
 
 It's better to name our data, in our last example, we called it `myName`, it can be any other names (like `abcd`, `klasdjlasjkd`) that you think is most descriptive for your variable.
 
-To declare a variable, we use `let`, `let` is a keyword in JavaScript (there are many others too!), it tells browser that whenever you see this keyword, it means I am creating a new variable.
+To declare a variable, we use `let`, `let` is a keyword in JavaScript (there are many others too!), it tells the browser that whenever you see this keyword, it means I am creating a new variable.
 
 We can't do something like:
 
 ```javascript
-let let = 1; // let is a keyword, you cannot use keyword as variable name by itself
+let let = 1; // let is a keyword, you cannot use the keyword as the variable name by itself
 ```
 
 but we can do:
@@ -166,7 +166,7 @@ but we can do:
 let letThisBecomeVariable = "Yay";
 ```
 
-Do note that you **cannot** have spaces in between for your variables, below are a few examples that is **invalid** for naming the variable:
+Do note that you **cannot** have spaces in between for your variables, below are a few examples that are **invalid** for naming the variable:
 
 1. Spaces
 
@@ -190,13 +190,13 @@ Just like in math, we can have `+`, `-`, `×`, and `÷`, we have it in programmi
 - `-` is minus in JavaScript
 - `*` is times in JavaScript
 - `/` is divide in JavaScript
-- `=` in JavaScript stands for assignment, not the equal in mathematic, `let x = 1;` in this case is assigning `1` into `x`
+- `=` in JavaScript stands for assignment, not the equal in mathematic, `let x = 1;` in this case, is assigning `1` into `x`
 
 ### Example
 
 #### = operator
 
-In programming, we always have \<variable\> = \<value\>, so whatever on the right side will always get assign into the left side variable.
+In programming, we always have \<variable\> = \<value\>, so whatever on the right side will always get assigned to the left side variable.
 
 ```html
 <script>
@@ -272,7 +272,7 @@ Lastly, do feel free to play around with other operators. [Here is a list of ope
 
 ### Challenge!
 
-Get the user birth year by using `window.prompt` (Accessing to window in browser), then, print out current user age using `console.log`!
+Get the user's birth year by using `window.prompt` (Accessing to window in browser), then, print out the current user age using `console.log`!
 
 Example output:
 
@@ -301,7 +301,7 @@ With the knowledge that we have right now, it's impossible to implement such log
 
 ### Logical operator
 
-Just like arithmetic operator, logical operators are a bunch of symbols.
+Just like an arithmetic operator, logical operators are a bunch of symbols.
 
 To use logical operators, we will need keywords like: `if` and `else`, just like your keyword `let`.
 
@@ -321,7 +321,7 @@ if (age <= 18) {
 }
 ```
 
-Do notice we have `{ }` in between of each if-else statements, all your code logic will be executed here if the `if-else` statement is `true` (Remember boolean?)
+Do notice we have `{ }` in between of each if-else statement, all your code logic will be executed here if the `if-else` statement is `true` (Remember boolean?)
 
 There are a few other logical operators in JavaScript too!
 
@@ -346,7 +346,7 @@ if (age != 20) {
 }
 ```
 
-Just like arithmetic operator, logical operators have precedence too! If you want any of them has the highest priority, you can wrap them with `( )`
+Just like the arithmetic operator, logical operators have precedence too! If you want any of them has the highest priority, you can wrap them with `( )`
 
 ```javascript
 let age = 20;
@@ -393,9 +393,9 @@ for (/*<declaring the index starting>*/ ,/*<a condition that if true, this loop 
 
 ## Function <a name="function"></a>
 
-We had been using function since the very beginning! `console.log`, `prompt`, etc, all these are functions!
+We had been using functions since the very beginning! `console.log`, `prompt`, etc, all these are functions!
 
-> Function are a set of instructions used to create the output from its input.
+> Function is a set of instructions used to create the output from its input.
 
 --- [https://www.kidscodecs.com/programming-functions/](https://www.kidscodecs.com/programming-functions/)
 
@@ -409,7 +409,7 @@ let mother = "Rainny";
 let child = "Foggy";
 ```
 
-For all the variables above, print at a greeting message as such: `"Good morning! <name here>"`
+For all the variables above, print a greeting message as such: `"Good morning! <name here>"`
 
 We could have, of course, do something like this:
 
@@ -441,7 +441,7 @@ greetThePerson(mother);
 greetThePerson(child);
 ```
 
-Now better! We removed lot's of duplicated code!
+Now better! We removed lots of duplicated code!
 
 Same as for loop and if-else, `function` is a keyword in JavaScript, function have the syntax bellow:
 
@@ -453,13 +453,13 @@ function <name of the function>(<parameter1, parameter2...>){
 
 ### Parameter
 
-Parameter in function are the variables or values that will be passed in to the function to refer, for say, `name` is a parameter that we will pass in with the family variables.
+The parameter in the function is the variables or values that will be passed into the function to refer, for say, `name` is a parameter that we will pass in with the family variables.
 
-If we want to print out the name and also the age, we can simply add one more paramter as such:
+If we want to print out the name and also the age, we can simply add one more parameter as such:
 
 ```javascript
 let father = "Sunny";
-let mother = "Rainny";
+let mother = "Rainy";
 let child = "Foggy";
 
 function greetThePerson(name, age) {
