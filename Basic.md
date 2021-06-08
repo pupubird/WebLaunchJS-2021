@@ -393,6 +393,86 @@ for (/*<declaring the index starting>*/ ,/*<a condition that if true, this loop 
 
 ## Function <a name="function"></a>
 
+We had been using function since the very beginning! `console.log`, `prompt`, etc, all these are functions!
+
+> Function are a set of instructions used to create the output from its input.
+
+--- [https://www.kidscodecs.com/programming-functions/](https://www.kidscodecs.com/programming-functions/)
+
+Let's start with a problem to solve:
+
+Variables initialized:
+
+```javascript
+let father = "Sunny";
+let mother = "Rainny";
+let child = "Foggy";
+```
+
+For all the variables above, print at a greeting message as such: `"Good morning! <name here>"`
+
+We could have, of course, do something like this:
+
+```javascript
+let father = "Sunny";
+let mother = "Rainny";
+let child = "Foggy";
+
+console.log("Good morning! " + father);
+console.log("Good morning! " + mother);
+console.log("Good morning! " + child);
+```
+
+But whenever I want to greet a new person, I have to copy-paste the code over and over again. That's bad!
+
+Instead, we should be doing with function:
+
+```javascript
+let father = "Sunny";
+let mother = "Rainny";
+let child = "Foggy";
+
+function greetThePerson(name) {
+  console.log("Good morning! " + name);
+}
+
+greetThePerson(father);
+greetThePerson(mother);
+greetThePerson(child);
+```
+
+Now better! We removed lot's of duplicated code!
+
+Same as for loop and if-else, `function` is a keyword in JavaScript, function have the syntax bellow:
+
+```javascript
+function <name of the function>(<parameter1, parameter2...>){
+  // The code that will execute when this function is called
+}
+```
+
+### Parameter
+
+Parameter in function are the variables or values that will be passed in to the function to refer, for say, `name` is a parameter that we will pass in with the family variables.
+
+If we want to print out the name and also the age, we can simply add one more paramter as such:
+
+```javascript
+let father = "Sunny";
+let mother = "Rainny";
+let child = "Foggy";
+
+function greetThePerson(name, age) {
+  console.log(
+    "Good morning! " + name + " you are " + age + " years old today!"
+  );
+}
+
+greetThePerson(father, 50);
+greetThePerson(mother, 40);
+greetThePerson(child), 20;
+```
+
 <br>
 <br>
 
