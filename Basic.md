@@ -293,6 +293,69 @@ Assuming this year is 2021
 
 ## Conditional statement <a name="conditional"></a>
 
+Let's think of this question:
+
+Get the user birth year by using `window.prompt` (Accessing to window in browser), then, print out current user age using `console.log`, if the person is under or equal 18, print "Below 18", if the person is above 18 and below 30, print "Above 18 and below 30", else, print "Above 30".
+
+With the knowledge that we have right now, it's impossible to implement such logic, hence, we will need the help of **Logical operator**.
+
+### Logical operator
+
+Just like arithmetic operator, logical operators are a bunch of symbols.
+
+To use logical operators, we will need keywords like: `if` and `else`, just like your keyword `let`.
+
+For example:
+
+```javascript
+let age = 20;
+
+if (age <= 18) {
+  // less than or equal
+  console.log("Below 18");
+} else if (age > 18 && age <= 30) {
+  // more than 18 and less than / equal 30
+  console.log("Above 18 and below 30");
+} else {
+  console.log("Above 30");
+}
+```
+
+Do notice we have `{ }` in between of each if-else statements, all your code logic will be executed here if the `if-else` statement is `true` (Remember boolean?)
+
+There are a few other logical operators in JavaScript too!
+
+#### OR operator
+
+```javascript
+let age = 20;
+
+if (age > 20 || age < 10) {
+  // "Or" operator
+  console.log("Age is more than 20 or less than 10");
+}
+```
+
+#### NOT operator
+
+```javascript
+let age = 20;
+
+if (age != 20) {
+  console.log("Age is not 20!");
+}
+```
+
+Just like arithmetic operator, logical operators have precedence too! If you want any of them has the highest priority, you can wrap them with `( )`
+
+```javascript
+let age = 20;
+
+if ((age >= 20 && age <= 30) || age != 25) {
+  console.log("Between 20 to 30 or not 25");
+}
+```
+
 <br>
 <br>
 
