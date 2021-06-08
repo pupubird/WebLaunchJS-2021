@@ -343,7 +343,7 @@ The sum of the two integers number1 and number2 is computed as: 2 + 3 = 5.
 
 ### Challenge 2
 
-Source: [https://www.hackerrank.com/challenges/staircase/problem](https://www.hackerrank.com/challenges/staircase/problem)
+Source: [https://www.hackerrank.com/challenges/fizzbuzz/problem](https://www.hackerrank.com/challenges/fizzbuzz/problem)
 
 <br>
 <br>
