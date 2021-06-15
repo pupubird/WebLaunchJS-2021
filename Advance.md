@@ -19,15 +19,15 @@ Estimated completion time: 1.5 - 2 hours
 
 ## Recap <a name="recap"></a>
 
-Let's recap on what we had learnt in the last session!
+Let's recap what we had learned in the last session!
 
 - Data Types
 
-  - We covered 4 kind of data types in JavaScript (there are more! Do explore them when you have time)
+  - We covered 4 kinds of data types in JavaScript (there are more! Do explore them when you have time)
   - String - words
   - Number - numbers
   - Boolean - true / false, useful in conditional statement
-  - Undefined - a data type that specify this variable have no value inside.
+  - Undefined - a data type that specifies this variable has no value inside.
 
 - Conditional Statement
 
@@ -45,7 +45,7 @@ if (condition) {
 
 ```javascript
 for (initialize; condition; process after execution){
-    execute these code only when condition is true
+    execute these code only when the condition is true
 }
 ```
 
@@ -59,7 +59,7 @@ function sumUpTheNumbers(num1, num2){
 sumUpTheNumbers(num1, num2);
 ```
 
-We will cover on what `return` keyword will do when it comes to function, later
+We will cover what the` return` keyword will do when it comes to function, later
 
 ---
 
@@ -73,7 +73,7 @@ We will cover on what `return` keyword will do when it comes to function, later
 Let's consider this question:
 
 ```
-Create a function to sum up the 2 numbers input, then, print out the numbers with "Your total is: <the total>"
+Create a function, to sum up, the 2 numbers input, then, print out the numbers with "Your total is: <the total>"
 ```
 
 We can use the keyword `return` (I am going to talk about it later), but, we can use a `callback` function to solve this question!
@@ -94,7 +94,7 @@ anyVariable("Rain");
 
 In this case, we are treating function just like any of our other data types (words, numbers, etc).
 
-With that in mind, we can move on the callback function!
+With that in mind, we can move on to the callback function!
 
 A callback function look something like this:
 
@@ -112,7 +112,7 @@ function print_weather() {
 greeting("Rain", print_weather); // treat print_weather like variable here;
 ```
 
-In real world example, the concept of callback is extensively used when it comes to network request (getting data from server). Like "After gotten the data from server, call this function to update user profile for this page".
+In a real-world example, the concept of the callback is extensively used when it comes to network requests (getting data from the server). Like "After gotten the data from the server, call this function to update user profile for this page".
 
 So to solve the question mentioned, what we can do is:
 
@@ -134,7 +134,7 @@ let second_number = 2;
 sumUpTwoNumbers(second_number, first_number, print_total);
 ```
 
-The beauty of callback function is, is doesn't care what's gotta happen, it will just call it dynamically!
+The beauty of the callback function is, it doesn't care what's gotta happen, it will just call it dynamically!
 
 For say:
 
@@ -193,7 +193,7 @@ Let's recall our previous session:
 
 > Data can be in any form: Number, word, a paragraph of words, a grocery list (a list of words), etc. We typically call these **data types** (type of the data, a number, word, etc) and **data structures** (collection of the data, a list, a set, etc).
 
-List in JavaScript is not a data type, but rather **data structure**, a data structure is a structure that hold many data inside.
+List in JavaScript is not a data type, but rather **data structure**, a data structure is a structure that holds many data inside.
 
 To create a list of your grocery list, you can write as such:
 
@@ -201,7 +201,7 @@ To create a list of your grocery list, you can write as such:
 let grocery_list = ["Milk", "Coca-cola", "Apple cider"];
 ```
 
-We use `[ ]` to specify it's a list, we then use `,` to seperate out each item in the list.
+We use `[ ]` to specify it's a list, we then use `,` to separate out each item in the list.
 
 To access our first item in the list, we can write as such:
 
@@ -214,9 +214,9 @@ let grocery_list = [
 console.log(grocery_list[0]);
 ```
 
-Remember, in programming, number always starts with 0.
+Remember, in programming, the number always starts with 0.
 
-But if I want to print out all my items in the grocery list, it will be tedious everytime to write out with the index! We can reuse what we learnt in session 1: **for loop** to work with our favor
+But if I want to print out all my items in the grocery list, it will be tedious every time to write out with the index! We can reuse what we learned in session 1: **for loop** to work in our favor
 
 ```javascript
 let grocery_list = ["Milk", "Coca-cola", "Apple cider"];
@@ -235,17 +235,17 @@ for (let i = 0; i < grocery_list.length; i++) {
 
 ## Object <a name="object"></a>
 
-We had been using object since the very beginning, object is a **data structure** (like list too!) that help you to hold all your variables!
+We had been using object since the very beginning, the object is a **data structure** (like list too!) that help you to hold all your variables!
 
-Imaging a situation like this:
+Imagine a situation like this:
 
 ```
 Rain has 2 eyes, both of them are black. He has 2 hands too and so do legs!
 ```
 
-To express this idea in JavaScript, we can utilize `Object` (if you are familiar with Python, this is dictionary, or map in Java)
+To express this idea in JavaScript, we can utilize `Object` (if you are familiar with Python, this is the dictionary or map in Java)
 
-To make it easier to visualize, here is a diagram
+To make it easier to visualize here is a diagram
 
 ![rain](https://raw.githubusercontent.com/pupubird/WebLaunchJS-2021/master/assets/rain.png)
 
@@ -262,11 +262,11 @@ console.log(rain);
 console.log(rain.eye_colour);
 ```
 
-We use `,` to seperate each item, and use `.` to access to the item
+We use `,` to separate each item and use `.` to access the item
 
 If you couldn't wrap your head around, just imagine Object is like List, but you give it a name (Proper term is **key**) to all your item (Proper term is **value**) instead of a number.
 
-We had been using `console.log` since beginning, now after learning Object, let's look a bit closer
+We had been using `console.log` since the beginning, now after learning Object, let's look a bit closer
 
 ```javascript
 console.log(console);
@@ -276,20 +276,20 @@ To visualize it out:
 
 ![console](https://raw.githubusercontent.com/pupubird/WebLaunchJS-2021/master/assets/log.png)
 
-Thou there are more advance data structure like `Class`, but we are not going to cover it in this session.
+Thou there is a more advanced data structure like `Class`, but we are not going to cover it in this session.
 
-You might be wondering, where exactly does `console` comes from?
+You might be wondering, where exactly does `console` come from?
 
-**It's actually a variable that the browser help you to declare by default everytime you open a new page**
+**It's actually a variable that the browser help you to declare by default every time you open a new page**
 
-Wanna try disable it? :P you can't
+Wanna try to disable it? :P you can't
 
-Here is an exercise to practice our understading to what we had covered so far:
+Here is an exercise to practice our understanding of what we had covered so far:
 
-Create a Object with variable name called `person`, give it few keys as below:
+Create an Object with a variable name called `person`, give it few keys as below:
 
-- eye_colour - a string with the person eyes' colour
-- walk - a function that accept `steps` ( A number ) as parameter, the print out `"I walk <steps> amount of steps"`;
+- eye_colour - a string with the person eyes' color
+- walk - a function that accepts `steps` ( A number ) as a parameter, the print out `"I walk <steps> amount of steps"`;
 - age - a number of the age of the person
 - friends - a list of all his friends' name
 
@@ -318,7 +318,7 @@ console.log(person);
 
 > Now, finally with the doom has come
 
-DOM, or Document Object Model, is a variable that you can access directly from browser, very much like `console`, it's a built-in variable that browser declared everytime you open a new page.
+DOM, or Document Object Model, is a variable that you can access directly from the browser, very much like `console`, it's a built-in variable that the browser declared every time you open a new page.
 
 to access to DOM:
 
@@ -369,14 +369,14 @@ In `document`, to select our HTML elements, we have function called `querySelect
 
 ![document](https://raw.githubusercontent.com/pupubird/WebLaunchJS-2021/master/assets/document.png)
 
-`querySelector` accept a string parameter, which, is our selector in CSS!
+`query selector accepts a string parameter, which, is our selector in CSS!
 
 ```javascript
 let title = document.querySelector(".title"); // pass in your CSS selector here
 console.log(title);
 ```
 
-This opens up a lot possibilities, we can, change the color of the title now!
+This opens up a lot of possibilities, we can change the color of the title now!
 
 ```javascript
 let title = document.querySelector(".title"); // pass in your CSS selector here
@@ -406,7 +406,7 @@ let descriptions = document.querySelectorAll(".description");
 console.log(descriptions);
 ```
 
-It return you a List of all your elements!
+It returns you a list of all your elements!
 
 Now you can loop them with `for loop`!
 
@@ -418,7 +418,7 @@ for (let i = 0; i < descriptions.length; i++) {
 }
 ```
 
-To change their colour, simply do it in the loop
+To change their color, simply do it in the loop
 
 ```javascript
 let descriptions = document.querySelectorAll(".description");
@@ -431,7 +431,7 @@ for (let i = 0; i < descriptions.length; i++) {
 
 ### Everything together
 
-Let's to solve this question
+Let's solve this question
 
 ```
 Change all your tags with class name "description" to green when the button is clicked!
@@ -451,11 +451,11 @@ console.log(button.onclick);
 
 It's currently "null" ( another data type in JavaScript, which basically means empty, or void ), awaiting us to do something!
 
-To understand the logic behind, whenever the user click on the button, the browser will look for the button's `onclick` key and call the **callback function** that is inside the button!
+To understand the logic behind it, whenever the user clicks on the button, the browser will look for the button's `onclick` key and call the **callback function** that is inside the button!
 
-Remember callback function? This is when it becomes useful
+Remember the callback function? This is when it becomes useful
 
-Let's go with simple first, we let the browser print "it works!" everytime when the user click on the button
+Let's go with simple first, we let the browser print "it works!" every time when the user clicks on the button
 
 ```javascript
 let button = document.querySelector("#magic");
@@ -492,7 +492,7 @@ button.onclick = callback; // notice we won't call the function here
 console.log(button.onclick);
 ```
 
-With these 12 lines of code, it's basically have almost all what you need to become a front-end developer! Celebrate for yourself! 🥳
+With these 12 lines of code, it's basically almost all that you need to become a front-end developer! Celebrate for yourself! 🥳
 
 ---
 
