@@ -14,6 +14,12 @@
             body > p {
                 font-size: 25px;
             }
+            .black-background{
+                background-color: black;
+            }
+            .dark-mode{
+                filter: invert(100%);
+            }
         </style>
     </head>
     <body>
@@ -23,20 +29,16 @@
         <a href="https://www.linkedin.com/in/rain-chai-48370318a/" id="linkedin" class="description">My linkedin here</a>
         <button id="magic">Click me to see magic</button>
         <script>
-let button = document.querySelector("#magic");
-function callback() {
-  console.log("it works!");
-
-  let descriptions = document.querySelectorAll(".description");
-  console.log(descriptions);
-  for (let i = 0; i < descriptions.length; i++) {
-    descriptions[i].style.color = "green";
-    console.log(descriptions[i]);
-  }
-}
-
-button.onclick = callback; // notice we won't call the function here
-console.log(button.onclick);
+            function toggleDarkMode(){
+                let body = document.querySelector('body');
+                body.classList.toggle('black-background');
+                
+                let contents = document.querySelectorAll('body > *:not(img)');
+                for (let i = 0; i < contents.length; i++){
+                    contents[i].classList.toggle('dark-mode');
+                }
+            }
+            document.querySelector('#magic').onclick = toggleDarkMode;
         </script>
     </body>
 </html>

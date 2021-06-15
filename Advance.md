@@ -498,3 +498,41 @@ With these 12 lines of code, it's basically almost all that you need to become a
 
 <br>
 <br>
+
+## Project <a name="project"></a>
+
+Let's add a dark mode toggle button!
+
+Well, to do so, it's actually quite simple:
+
+We need to add 2 classes in our CSS
+
+```css
+.black-background {
+  background-color: black;
+}
+.dark-mode {
+  filter: invert(100%);
+}
+```
+
+**invert** will invert all the color of any element that has this class
+
+We will assign `black-background` class to our `body` whenever the user click the toggle button!
+
+We can do so by using `toggle` function in the `classList` key of our HTML element
+
+```javascript
+function toggleDarkMode() {
+  let body = document.querySelector("body");
+  body.classList.toggle("black-background");
+  // select all elements in body, except image, as we wouldn't want to invert our image color
+  let contents = document.querySelectorAll("body > *:not(img)");
+  for (let i = 0; i < contents.length; i++) {
+    contents[i].classList.toggle("dark-mode");
+  }
+}
+document.querySelector("#magic").onclick = toggleDarkMode;
+```
+
+That's it!
