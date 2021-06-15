@@ -1,15 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <script>
-      console.log("World");
-    </script>
-  </body>
+<html>
+    <head>
+        <style>
+            .description {
+                color: red;
+            }
+            .title {
+                color: blue;
+            }
+            #magic {
+                background-color: blue;
+                color: white;
+            }
+            body > p {
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="title">My hello world page!</h1>
+        <p class="description">Hehe</a>
+        <p class="description">My first one yoo</a>
+        <a href="https://www.linkedin.com/in/rain-chai-48370318a/" id="linkedin" class="description">My linkedin here</a>
+        <button id="magic">Click me to see magic</button>
+        <script>
+let button = document.querySelector("#magic");
+function callback() {
+  console.log("it works!");
+
+  let descriptions = document.querySelectorAll(".description");
+  console.log(descriptions);
+  for (let i = 0; i < descriptions.length; i++) {
+    descriptions[i].style.color = "green";
+    console.log(descriptions[i]);
+  }
+}
+
+button.onclick = callback; // notice we won't call the function here
+console.log(button.onclick);
+        </script>
+    </body>
 </html>
