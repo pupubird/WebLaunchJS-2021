@@ -63,6 +63,9 @@ We will cover on what `return` keyword will do when it comes to function, later
 
 ---
 
+<br>
+<br>
+
 ## Callback function <a name="callback"></a>
 
 > Call me back later, I am cooking now.
@@ -181,6 +184,9 @@ console.log(theSum);
 
 ---
 
+<br>
+<br>
+
 ## List <a name="list"></a>
 
 Let's recall our previous session:
@@ -223,6 +229,9 @@ for (let i = 0; i < grocery_list.length; i++) {
 `.length` will get the length of the list!
 
 ---
+
+<br>
+<br>
 
 ## Object <a name="object"></a>
 
@@ -301,6 +310,9 @@ console.log(person);
 ```
 
 ---
+
+<br>
+<br>
 
 ## DOM <a name="dom"></a>
 
@@ -483,3 +495,6 @@ console.log(button.onclick);
 With these 12 lines of code, it's basically have almost all what you need to become a front-end developer! Celebrate for yourself! 🥳
 
 ---
+
+<br>
+<br>
