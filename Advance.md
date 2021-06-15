@@ -536,3 +536,21 @@ document.querySelector("#magic").onclick = toggleDarkMode;
 ```
 
 That's it!
+
+---
+
+<br>
+<br>
+
+## Conclusion <a name="conclusion"></a>
+
+When I was getting started learning HTML, CSS and JS, I felt like I was in this foggy place, where I don't know what I do not know.
+
+It's always good to know where are you, and where to go next. Here are a few resources and projects you can refer to!
+
+- [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) - List of all APIs in browser that you can access to
+- [https://www.freecodecamp.org/](https://www.freecodecamp.org/)
+- [PuTodo](https://putodo.netlify.app/) - Build a To-Do web app! Learn how to use localstorage (Another thing you can access to in browser) and learning how to convert your website into an actual app!
+- [Web developer roadmap](https://github.com/kamranahmedse/developer-roadmap)
+
+Good luck in your learning!
